@@ -144,6 +144,10 @@ INSERT INTO attendances (person_id, movie_id) VALUES (1, 13);
 INSERT INTO attendances (person_id, movie_id) VALUES (10, 15);
 INSERT INTO attendances (person_id, movie_id) VALUES (13, 1);
 
-INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '24:00');
-UPDATE movies SET show_time = '21:30' WHERE title = 'Guardians of the Galaxy 2' AND show_time = '14:55';
-SELECT * FROM movies;
+UPDATE people 
+SET name = 'Christopher Whatshisface', 
+  name = 'Christopher Theotherone' 
+WHERE name = 'Christopher Donnelly'
+  AND name = 'Christopher Hunter';
+  
+SELECT * FROM people;

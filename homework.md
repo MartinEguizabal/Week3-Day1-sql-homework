@@ -55,6 +55,12 @@ DELETE FROM people WHERE name = 'John Travolta';
 UPDATE people SET name = 'Christopher Whatshisface' WHERE name = 'Christopher Donnelly';
 UPDATE people SET name = 'Christopher Theotherone' WHERE name = 'Christopher Hunter';
 
+UPDATE people 
+SET name = 'Christopher Whatshisface', 
+  name = 'Christopher Theotherone' 
+WHERE name = 'Christopher Donnelly'
+  AND name = 'Christopher Hunter';
+
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
 
 INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '24:00');
